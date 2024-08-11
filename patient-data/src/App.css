@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600&display=swap');
+
+
+* {
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+
+}
+
+@media (max-width: 1024px) {
+  .chart-styled-color {
+    overflow-x: hidden;
+  }
+}
+
+.App {
+  background-color: #F6F7F8;
+}
+
+.styled-nav {
+  top: 18px;
+  left: 18px;
+  width: 1800px;
+  height: 72px;
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 70px;
+  opacity: 1;
+  align-items: center;
+}
+
+.styled-navlink {
+  font-size: 14px;
+  height: 19px !important;
+  color: #072635;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+
+}
+
+.person-logo {
+  display: flex;
+  align-items: center;
+  margin-left: auto
+}
+
+.divider {
+  height: 30px;
+  width: 1px;
+  background-color: gray;
+  margin: 0 8px;
+}
+
+.person-icon {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.person-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.person-text h5 {
+  color: #072635;
+  font-size: 14px;
+  width: 119px;
+  height: 19px;
+}
+
+.person-text p {
+  color: #707070;
+  height: 19px;
+  font-size: 14px;
+}
+
+.person-text h5,
+.person-text p {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* PATIENT SECTION */
+.patient-styled-text {
+  width: 100px;
+  height: 33px;
+  font: normal normal 800 24px/33px Manrope;
+  color: #072635;
+  font-size: 24px;
+}
+
+.styled-bg-patients {
+  background-color: #FFFFFF;
+  margin: 0px 3px;
+  border-radius: 10px;
+}
+
+.active-patient {
+  background-color: #D8FCF7;
+  width: 475px;
+  padding: 10px;
+  margin-left: -12px !important;
+}
+
+.dotsbar {
+  margin-left: 50px !important;
+}
+
+
+/* CHART SECTION  column 2*/
+.patient-container2 {
+  font-size: 24px !important;
+  width: 200px;
+  height: 24px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 18px/24px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.blood-pressure-text {
+  top: 231px;
+  left: 453px;
+  width: 150px;
+  height: 24px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 18px/24px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+
+}
+
+.text-months {
+  font-size: 14px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: right;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  overflow: hidden;
+}
+
+.text-months img {
+  top: 243px;
+  left: 880px;
+  width: 11px;
+  height: 6px;
+  opacity: 1;
+  margin-top: 7px !important;
+}
+
+.styled-bg-column2 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.chart-styled-color {
+  background-color: #F4F0FE;
+  border-radius: 10px;
+  width: 695px;
+}
+
+.systolic-text {
+  font-size: 14px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+  margin-top: -30px;
+}
+
+.dot1 {
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--unnamed-color-ffffff);
+  background: #E66FD2 0% 0% no-repeat padding-box;
+  border: 1px solid #FFFFFF;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+
+.systolic-value {
+  font-size: 22px;
+  top: 258px;
+  left: 939px;
+  width: 38px;
+  height: 30px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/30px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 22px/30px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.systolic-diastolic img {
+  width: 10px;
+  height: 5px;
+  opacity: 1;
+  margin-top: 10px !important;
+}
+
+.systolic-diastolic .dot2 {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #FFFFFF;
+  background: #8C6FE6 0% 0% no-repeat padding-box;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.systolic-level {
+  font-size: 14px;
+  width: 230px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.diastolic-text {
+  font-size: 14px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+
+}
+
+
+.diastolic-value {
+  font-size: 22px;
+  width: 25px;
+  height: 30px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) 22px/30px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 22px/30px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.diastolic-level {
+  font-size: 14px;
+  width: 230px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+
+.border-between {
+  display: block;
+  width: 90%;
+  height: 2px;
+  background-color: #CBC8D4;
+  margin-top: 35px;
+  margin-left: 12px;
+}
+
+.styled-card-img1 {
+  background-color: #E0F3FA;
+  border-radius: 12px;
+  top: 533px;
+  left: 437px;
+  width: 228px;
+  height: 242px;
+}
+
+.styled-card-img1 img {
+  top: 549px;
+  left: 453px;
+  width: 96px;
+  height: 96px;
+  opacity: 1;
+}
+
+.styled-card-img1 h4 {
+  font-size: 16px;
+  top: 661px;
+  left: 453px;
+  width: 125px;
+  height: 22px;
+  font: var(--unnamed-font-style-normal) normal medium 16px/22px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal medium 16px/22px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.patient-rate {
+  font-size: 30px;
+  top: 682px;
+  left: 453px;
+  width: 109px;
+  height: 41px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) 30px/41px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal 800 30px/41px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.patient-levels {
+  font-size: 14px;
+  top: 740px;
+  left: 453px;
+  width: 46px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.styled-card-img2 {
+  top: 533px;
+  left: 686px;
+  width: 228px;
+  height: 242px;
+  background: #FFE6E9 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+}
+
+.styled-card-img3 {
+  top: 533px;
+  left: 935px;
+  width: 228px;
+  height: 242px;
+  background: #FFE6F1 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+}
+
+
+/* COLUMN3 */
+.patient-container3 {
+  height: 33px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  font: normal normal 800 24px/33px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.styled-patient-info {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+}
+
+.styled-patient-name {
+  width: 94px;
+  height: 19px;
+  letter-spacing: 0px;
+  color: #072635;
+  font-size: 14px;
+  font: normal normal bold 14px/19px Manrope;
+}
+
+.styled-age,
+.styled-gender {
+  font-size: 14px;
+  color: #707070;
+  left: 98px;
+  width: 68px;
+}
+
+.patient-info {
+  font-size: 14px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.info-section {
+  font-size: 19px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal medium var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal medium 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.styled-button {
+  top: 775px;
+  left: 1289px;
+  width: 220px;
+  height: 41px;
+  background: var(--activestate_bg_1) 0% 0% no-repeat padding-box;
+  background: #01F0D0 0% 0% no-repeat padding-box;
+  border-radius: 41px;
+  opacity: 1;
+  border: none !important;
+  font-size: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  margin-right: 50px !important;
+}
+
+
+/* DIAGNOSTIC LIST */
+.diagnostic-list {
+  background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box !important;
+  border-radius: 16px;
+  opacity: 1;
+  width: 800px !important;
+}
+
+.diagnostic-list-title {
+  font-size: 24px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  font: normal normal 800 24px/33px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.styled-diagnostic-container {
+  margin-left: 380px !important;
+}
+
+
+
+.styled-lab-res {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  opacity: 1;
+  margin-left: 20px;
+  width: 480px !important;
+
+}
+
+.lab-result-title {
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-800) var(--unnamed-font-size-24)/var(--unnamed-line-spacing-33) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal 800 24px/33px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.lab-res-items h3 {
+  font-size: 13px;
+  top: 960px;
+  left: 1253px;
+  width: 70px;
+  height: 18px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 13px/18px var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal normal 13px/18px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.lab-item-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.lab-desc{
+display: flex;
+justify-content: space-between;
+background-color: #F6F7F8;
+
+background: #F6F7F8 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+
+
+
+
+.info-border {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F6F7F8 0% 0% no-repeat padding-box;
+  border-radius: 24px;
+  opacity: 1;
+
+}
+
+.info-border h4 {
+  left: 686px;
+  width: 79px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.diagnostic-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 1;
+  border-bottom: 0.3px solid #CBC8D4;
+}
+
+.diagnostic-item p {
+  top: 999px;
+  left: 453px;
+  height: 19px;
+  font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-manrope);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-072635);
+  text-align: left;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
